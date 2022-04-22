@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "154449ff-e12b-4dd0-9c04-2ae9dc9ea610",
+		"name": "post-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有文章",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hidden-tor-25060.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"hidden-tor-25060",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆文章",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Kun\",\n    \"content\": \"新增文章1\",\n    \"image\": \"https://picsum.photos/id/1001/5616/3744\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hidden-tor-25060.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"hidden-tor-25060",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有文章",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://hidden-tor-25060.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"hidden-tor-25060",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆文章",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://hidden-tor-25060.herokuapp.com/posts/62626908df4b5771bb18e60a",
+					"protocol": "https",
+					"host": [
+						"hidden-tor-25060",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"62626908df4b5771bb18e60a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新單筆資料",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"新增文章1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hidden-tor-25060.herokuapp.com/posts/626268cbdf4b5771bb18e606",
+					"protocol": "https",
+					"host": [
+						"hidden-tor-25060",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"626268cbdf4b5771bb18e606"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
